@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administered Vaccines</title>
+  <link rel="stylesheet" href="../Manage_Suppliers/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3 id="welcomeMessage">Welcome</h3><br>
+      <ul>
+        <li><a href="../Workers_Management_Page/index.html">Staff Management</a></li>
+        <li><a href="../Manage_Suppliers/index.html">Supplier List</a></li>
+        <li><a href="../Administer_Vaccine/index.html">Review Administers</a></li>
+        <li><a href="/index.html">Log Out</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Administered Vaccines Record</h1>
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <input type="text" id="searchBar" placeholder="Search administered records..." style="padding: 10px; width: 300px; border: 1px solid #ddd; border-radius: 5px;">
+        <button onclick="searchAdministeredRecords()" style="background-color: #73A8E6; color: white; border: none; padding: 10px 15px; border-radius: 5px; margin-left: 10px; cursor: pointer;">Search</button>
+      </div>
+      <div style="overflow-x: auto;">
+        <table id="administeredTable">
+          <thead>
+            <tr>
+              <th>Record ID</th>
+              <th>Patient ID</th>
+              <th>Vaccine ID</th>
+              <th>Assistant ID</th>
+              <th>Doctor ID</th>
+              <th>Date Administered</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+      </div>
+    </div>
+  </div>
+  <script src="record.js"></script>
+</body>
+</html>

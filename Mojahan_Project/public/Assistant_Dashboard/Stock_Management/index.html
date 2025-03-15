@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Management</title>
+  <link rel="stylesheet" href="../Manage_Patients/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3 id="welcomeMessage">Welcome</h3><br>
+      <ul>
+        <li><a href="../Administer_Vaccine/index.html">Administer Vaccine</a></li>
+        <li><a href="../Manage_Patients/index.html">Manage Patients</a></li>
+        <li><a href="../Stock_Management/index.html">Stock Management</a></li>
+        <li><a href="../Vaccine_Inventorys/index.html">Vaccine Inventory</a></li>
+        <li><a href="/index.html">Log Out</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Stock Management (Stock Out)</h1>
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <input type="text" id="searchBar" placeholder="Search stock..." style="padding: 10px; width: 300px; border: 1px solid #ddd; border-radius: 5px;">
+        <button onclick="searchStock()" style="background-color: #73A8E6; color: white; border: none; padding: 10px 15px; border-radius: 5px; margin-left: 10px; cursor: pointer;">Search</button>
+      </div>
+      <div style="overflow-x: auto;">
+        <table id="stockOutTable">
+          <thead>
+            <tr>
+              <th>Stock ID</th>
+              <th>Vaccine Name</th>
+              <th>Quantity Out</th>
+              <th>Assistant ID</th>
+              <th>Date Out</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="stock.js"></script>
+</body>
+</html>

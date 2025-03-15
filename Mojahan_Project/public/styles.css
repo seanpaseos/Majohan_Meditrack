@@ -1,0 +1,68 @@
+/* Basic Page Styling */
+body {
+    background-color: #89CFF0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centered Container */
+.container {
+    width: 320px;
+    margin: 100px auto;
+    background-color: #555252;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(49, 58, 58);
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fefbfb;
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffeded;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+/* Submit Button */
+button {
+    background-color: #73A8E6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #73A8E6;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.custom-label {
+    color: white;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+}

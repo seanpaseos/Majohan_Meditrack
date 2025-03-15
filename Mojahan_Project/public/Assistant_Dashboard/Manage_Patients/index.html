@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Record Tracking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3 id="welcomeMessage">Welcome</h3><br>
+      <ul>
+        <li><a href="../Administer_Vaccine/index.html">Administer Vaccine</a></li>
+        <li><a href="../Manage_Patients/index.html">Manage Patients</a></li>
+        <li><a href="../Stock_Management/index.html">Stock Management</a></li>
+        <li><a href="../Vaccine_Inventorys/index.html">Vaccine Inventory</a></li>
+        <li><a href="/index.html">Log Out</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Medical Patient Tracking</h1>
+      <form id="recordForm" style="max-width: 500px; margin: 0 auto; background: #f4f4f4; padding: 20px; border-radius: 10px;">
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <button type="button" id="recordPatientButton" style="font-size: 20px; padding: 20px; background-color: #73A8E6; color: white; border: none; border-radius: 5px; cursor: pointer;" onclick="openPatientForm()">
+            Record a Patient
+          </button>
+          <button type="button" id="vaccineNameButton" style="font-size: 20px; padding: 20px; background-color: #73A8E6; color: white; border: none; border-radius: 5px; cursor: pointer;" onclick="window.location.href='record.html'">
+            Patient Data Tracking
+          </button>        
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="patient.js"></script>
+  <script src="record.js"></script>
+</body>
+</html>
