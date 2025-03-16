@@ -30,3 +30,36 @@ Follow these steps to set up and run our project on your local machine:
     Username: assistant1
     Password: securepass123
 Each role will be redirected to its respective page upon successful login.
+
+Unable to Start XAMPP
+
+Ensure Apache and MySQL are not blocked by a firewall or another application.
+
+Check if ports 80 (Apache) and 3306 (MySQL) are in use by running:
+
+netstat -ano | findstr :80
+netstat -ano | findstr :3306
+
+If another application is using these ports, either stop that process or change XAMPP's port settings.
+
+Port 3000 is Already in Use
+
+To kill a process running on port 3000, follow these steps:
+
+Find the Process ID (PID) using the command:
+
+netstat -ano | findstr :3000
+
+This will return a line similar to:
+
+TCP    0.0.0.0:3000             0.0.0.0:0              LISTENING       12345
+
+In this example, 12345 is the PID.
+
+Kill the process using:
+
+taskkill /PID 12345 /F
+
+Replace 12345 with the actual PID you found.
+
+After completing these steps, restart the server using node server.js.
